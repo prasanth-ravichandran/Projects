@@ -1,0 +1,90 @@
+* {
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), #3551b5),
+    url(pexels1.jpeg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.Elements {
+  margin-bottom: 30px;
+  position: relative;
+}
+form {
+  width: 90%;
+  max-width: 600px;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  font-size: 15px;
+}
+label {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  cursor: text;
+  color: #ffffff;
+  transition: 0.2s;
+}
+button {
+  padding: 10px 0;
+  background-image: linear-gradient(green, black);
+  color: #fff;
+  outline: none;
+  border: 1px solid #ffff;
+  width: 100%;
+  cursor: pointer;
+}
+button:hover {
+  background-image: linear-gradient(#ed1965, black);
+}
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+  top: -35px;
+  font-size: 14px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row .Elements {
+  flex-basis: 48%;
+}
+.row2 {
+  display: flex;
+  float: right;
+  margin: 0 160px;
+}
+
+h1 {
+  color: #caccd1;
+  font-style: italic;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+h2 {
+  font-style: italic;
+  color: yellowgreen;
+}
